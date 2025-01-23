@@ -1,4 +1,6 @@
 // import React from 'react';
+
+//demo page
 import LeftSidebar from '../components/LeftSidebar';
 
 const Home = () => {

@@ -1,15 +1,11 @@
 // import React from 'react';
 
 //demo page
-import LeftSidebar from '../components/LeftSidebar';
-
 const Home = () => {
-  //hello ji
   return (
     <div className="flex">
       
-      <LeftSidebar />
-      <div className="flex-1 ml-64 md:ml-80 lg:ml-96 px-4 sm:px-6 md:px-8 lg:px-10 overflow-y-auto h-screen ">
+      <div className="flex-1  px-4 sm:px-6 md:px-8 lg:px-10 overflow-y-auto h-screen ">
         <h1 className="text-xl sm:text-2xl md:text-3xl text-[#006FB9] mt-20 sm:mt-28 md:mt-40 font-bold">
           Email Header Filtering
         </h1>

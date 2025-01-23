@@ -1,4 +1,3 @@
-// LeftSidebar.js
 import { useState } from 'react';
 import { IoMdPerson } from "react-icons/io";
 import { HiMiniTicket } from "react-icons/hi2";
@@ -19,7 +18,9 @@ const LeftSidebar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 h-screen w-64 md:w-80 lg:w-96 bg-white border-r-2 border-gray-300 z-10 roboto-font`}
+        className={`${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } lg:translate-x-0 transform transition-transform duration-300 ease-in-out fixed lg:static w-64 md:w-80 lg:w-96 h-screen border-r-6 border-gray-300 bg-white z-10 roboto-font`}
       >
         <button
           className="lg:hidden absolute -right-12 top-4 p-2 bg-white rounded-r-lg shadow-md"
@@ -27,6 +28,7 @@ const LeftSidebar = () => {
         >
           <HiMenuAlt2 className="text-xl md:text-2xl" />
         </button>
+
 
         <div className="flex ml-4 md:ml-8 lg:ml-10 items-center w-full pt-6 md:pt-8 lg:pt-10">
           <img src="Logo.png" alt="Logo" className="h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16" />
